@@ -65,6 +65,11 @@ Each new column in the output corresponds to a raster, named using the raster fi
 - The output folder will be created if it does not exist.
 - Shapefiles have a 10-character limit on field names; longer names will be truncated.
 
+
+⚠️ Note on Shape Field in CSV Output
+When exporting the final attribute table to CSV, the Shape field contains raw geometry data (e.g., (X, Y) coordinates)
+instead of the label "Point" as seen in ArcGIS attribute tables. This behavior is due to how arcpy.da.SearchCursor returns geometry values.
+
 ---
 
 ## Example Use Case
