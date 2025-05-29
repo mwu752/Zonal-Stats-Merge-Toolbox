@@ -20,6 +20,7 @@ This tool is designed for batch processing using the ArcGIS Toolbox functionalit
 | `Folders Containing TIFF Rasters` | Folder(s) | One or more folders with `.tif` raster files to process. |
 | `Output Folder (CSV and Shapefile)` | Folder | Destination where the merged shapefile and CSV table will be saved. |
 
+⚠️Note: If your input raster is in the RasterDataset format, please use the Batch Convert RasterDataset to TIFF tool to convert it to .tif files before proceeding.
 ---
 
 ## What It Does
